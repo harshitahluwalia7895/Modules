@@ -1,0 +1,12 @@
+import datetime
+>>> d = datetime.date(2012, 10, 18)
+>>> d.timetuple()
+time.struct_time(tm_year=2012, tm_mon=10, tm_mday=18, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=3, tm_yday=292, tm_isdst=-1)
+>>> tuple(d.timetuple())
+(2012, 10, 18, 0, 0, 0, 3, 292, -1)
+
+
+timetuple(...)
+     |      Return time tuple, compatible with time.localtime().
+
+
